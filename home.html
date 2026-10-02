@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NutriDesk — Главная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">NutriDesk</div>
+        <div class="user-greeting">
+            <span class="hello">Привет,</span>
+            <span class="username">Лев</span>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="calorie-card">
+            <h1 class="card-title">Остаток калорий</h1>
+            <p class="card-formula">Осталось = Цель − Потреблено</p>
+
+            <div class="calorie-row">
+                <div class="ring-wrapper">
+                    <svg width="100%" height="100%" viewBox="0 0 160 160">
+                        <circle class="ring-bg" cx="80" cy="80" r="70" />
+                        <circle class="ring-fill" cx="80" cy="80" r="70" stroke-dasharray="439.82"
+                            stroke-dashoffset="123" />
+                    </svg>
+                    <div class="ring-center">
+                        <div class="percent">72%</div>
+                        <div class="sub">выполнено</div>
+                    </div>
+                </div>
+
+                <div class="calorie-info">
+                    <div class="info-row">
+                        <span class="info-label">Цель</span>
+                        <span class="info-value">2000</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Потреблено</span>
+                        <span class="info-value consumed">1440</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Осталось</span>
+                        <span class="info-value remaining">560</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 NutriDesk · Все права защищены</p>
+    </footer>
+
+    <nav class="bottom-nav">
+        <a class="nav-item active" href="home.html">
+            <i class="fas fa-home"></i>
+            <span>Главная</span>
+        </a>
+        <a class="nav-item" href="diary.html">
+            <i class="fas fa-book-open"></i>
+            <span>Дневник</span>
+        </a>
+        <a class="nav-item" href="#">
+            <i class="fas fa-chart-bar"></i>
+            <span>Статистика</span>
+        </a>
+        <a class="nav-item" href="#">
+            <i class="fas fa-user"></i>
+            <span>Профиль</span>
+        </a>
+    </nav>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
